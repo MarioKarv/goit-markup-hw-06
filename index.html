@@ -310,6 +310,17 @@
                 </li>
            </ul>
         </div>
+        <div class="mailing-list">
+          <form class="foot-form">
+            <div class="foot-input">
+              <h3 class="foot-form-title">Підпишіться на розсилку</h3>
+              <input type="email" name="mail" id="mail" placeholder="E-mail">
+            </div>
+            <button type="submit" class="submit-but-foot">
+              Підписатися <svg width="24px" height="24px" class="submit-icon"><use href="/images/icons.svg#facebook"></use></svg> 
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -320,12 +331,14 @@
             <use href="./images/modal.svg#cross"></use>
           </svg>
         </button>
-        <form>
+        <form class="modal-form">
           <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
           <div class="par-form-field">
             <div class="form-field">
             <label for="name">Ім'я</label>
-            <input type="text" name="name" id="name">
+            <div class="input-modal">
+              <input type="text" name="name" id="name"><svg width="18px" height="18px" class="submit-modal-icons"><use href="/images/icons.svg#facebook"></use></svg></input>
+            </div>
           </div>
           <div class="form-field">
             <label for="tel">Телефон</label>
