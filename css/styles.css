@@ -929,6 +929,14 @@ textarea{
     resize: none;
 }
 
+.checkbox-input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    position: absolute;
+}
+
 .submit-but{
     padding: 10px 52px;
     font-weight: 700;
