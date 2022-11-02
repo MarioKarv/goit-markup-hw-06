@@ -731,6 +731,10 @@ body{
     color: rgba(255, 255, 255, 0.6);
 }
 
+.input-foot:focus{
+    color: var(--white);
+}
+
 .submit-but-foot{
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -859,7 +863,7 @@ body{
 
 .form-field input{
     margin: 0;
-    padding: 11px 12px;
+    padding: 11px 12px 11px 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     width: 100%;
@@ -900,8 +904,22 @@ body{
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
-    background-color: tomato;
 }
+
+
+.input-modal:focus-within > .submit-modal-icons{
+    fill: var(--accent-color);
+}
+
+.form-input:focus ,
+textarea:focus{
+    border: 1px solid  var(--accent-color);
+}   
+
+input, textarea{
+    outline: none;
+}
+
 
 .checkbox{
     margin-bottom: 30px;
