@@ -818,6 +818,7 @@ body{
     border-radius: 50%;
     cursor: pointer;
     /* outline: 2px solid teal; */
+    transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
 .button-modal:hover{
@@ -867,6 +868,7 @@ body{
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     width: 100%;
+    transition: border-color var(--transition-duration) var(--transition-timing-function);
 }
 
 .input-modal {
@@ -878,6 +880,7 @@ body{
     padding: 12px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    transition: border-color var(--transition-duration) var(--transition-timing-function);
 }
 
 .form-field label{
@@ -904,6 +907,7 @@ body{
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
+    transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
 
@@ -920,21 +924,55 @@ input, textarea{
     outline: none;
 }
 
-
-.checkbox{
-    margin-bottom: 30px;
-}
-
-textarea{
-    resize: none;
-}
-
-.checkbox-input{
+.checkbox-input {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 
     position: absolute;
+}
+
+.checkbox{
+    margin:0 auto 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox-icon{
+    border: 2px solid #212121;
+    border-radius: 2px;
+    margin-right: 9px;
+    fill: none;
+    
+    transition: border-color var(--transition-duration) var(--transition-timing-function),
+            fill var(--transition-duration) var(--transition-timing-function),
+            background-color var(--transition-duration) var(--transition-timing-function);
+}
+
+.checkbox-input:checked + .checkbox-icon{
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+    fill: var(--white);
+    
+}
+
+.checkbox-label{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+
+.form-link {
+    text-decoration-line: underline;
+    color: var(--accent-color);
+}
+
+textarea{
+    resize: none;
 }
 
 .submit-but{
@@ -954,6 +992,8 @@ textarea{
     transition: background-color var(--transition-duration) var(--transition-timing-function);
     cursor: pointer;
 }
+
+
 
 .submit-but:hover,
 .submit-but:focus{

@@ -317,7 +317,7 @@
               <input type="email" name="mail" id="mail" placeholder="E-mail" class="input-foot">
             </div>
             <button type="submit" class="submit-but-foot">
-              Підписатися <svg width="24px" height="24px" class="submit-icon"><use href="/images/icons.svg#facebook"></use></svg> 
+              Підписатися <svg width="24px" height="24px" class="submit-icon"><use href="/images/icons.svg#send"></use></svg> 
             </button>
           </form>
         </div>
@@ -339,7 +339,7 @@
             <div class="input-modal">
               <input type="text" name="name" id="name" class="form-input"/>
               <svg width="18px" height="18px" class="submit-modal-icons">
-                <use href="/images/icons.svg#facebook"></use>
+                <use href="/images/icons.svg#person"></use>
               </svg>
             </div>
           </div>
@@ -348,7 +348,7 @@
             <div class="input-modal">
               <input type="tel" name="tel" id="tel" class="form-input"/>
               <svg width="18px" height="18px" class="submit-modal-icons">
-                <use href="/images/icons.svg#facebook"></use>
+                <use href="/images/icons.svg#phone"></use>
               </svg>
             </div>
           </div>
@@ -357,7 +357,7 @@
             <div class="input-modal">
               <input type="email" name="mail" id="mail" class="form-input"/>
               <svg width="18px" height="18px" class="submit-modal-icons">
-                <use href="/images/icons.svg#facebook"></use>
+                <use href="/images/icons.svg#email"></use>
               </svg>
             </div>
           </div>
@@ -366,10 +366,13 @@
             <textarea name="comment" id="comment" rows="7" placeholder="Введіть текст"></textarea>
           </div>
           </div>
-          <div class="checkbox">
-            <input type="checkbox" name="policy" id="policy" class="checkbox-input">
-            <label for="policy">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label>
-          </div>
+          <label class="checkbox">
+            <input type="checkbox" name="policy" class="checkbox-input">
+            <svg width="16px" height="15px" class="checkbox-icon">
+              <use href="/images/icons.svg#check"></use>
+            </svg>
+            <span class="checkbox-label">Погоджуюся з розсилкою та приймаю <a href="" class="form-link">Умови договору</a></span>
+          </label>
           <button type="submit" class="submit-but">Відправити</button>
         </form>
       </div>
